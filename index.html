@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Indumathi</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Dancing+Script:wght@500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient floating petals container -->
+  <div id="petals-container" aria-hidden="true"></div>
+
+  <!-- Background organic watercolor waves -->
+  <div class="bg-waves" aria-hidden="true">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+  </div>
+
+  <!-- Reading Progress Bar (Active on Page 2) -->
+  <div id="reading-progress-bar" class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Main Multi-page App Shell -->
+  <main class="app-container">
+    
+    <!-- =========================================================================
+         PAGE 1: Intro / Apology Landing (Preserved with exact fidelity)
+         ========================================================================= -->
+    <section id="page-1" class="page-view active" aria-label="Page 1">
+      <div class="page-content page-1-grid">
+        
+        <!-- Left Column: Message Content -->
+        <div class="text-content-pane">
+          <!-- Handwritten Main Title -->
+          <div class="heading-wrapper">
+            <h1 class="main-heading">Hey Indumathi....</h1>
+            <svg class="brush-stroke" viewBox="0 0 260 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.5C45 4.5 130 3 258 7" stroke="#e8a7b3" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.6"/>
+            </svg>
+          </div>
+
+          <!-- Cute Subheading -->
+          <p class="sub-greeting">you made it here. 🥺</p>
+
+          <!-- Body Paragraphs -->
+          <div class="message-card">
+            <p class="body-text highlight-visit">
+              Thank you for taking a little time<br>
+              to <span class="accent-text-pink underline-accent">visit this</span>.
+            </p>
+
+            <div class="subtle-divider">
+              <span></span>
+            </div>
+
+            <p class="body-text main-message">
+              I know you don’t have to read any of this,<br class="desktop-br">
+              but I’ve had so many things in <span class="accent-text-pink heart-glow">my heart</span><br class="desktop-br">
+              that I couldn’t say properly before.
+            </p>
+
+            <p class="emphasis-line">
+              So I made this for you.
+            </p>
+          </div>
+
+          <!-- Navigation Action -->
+          <div class="button-container">
+            <button id="btn-to-page-2" class="pill-button primary-pill" type="button" aria-label="Go to Page 2">
+              <span class="btn-text">Next</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+          <!-- Bottom Left Sakura Branch -->
+          <div class="sakura-corner" aria-hidden="true">
+            <img src="assets/flower.png" alt="Cherry blossoms decoration" class="flower-img" onerror="this.style.display='none'">
+            <svg class="flower-svg-fallback" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 90 Q30 60 70 30" stroke="#8d6b67" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="70" cy="30" r="10" fill="#f8bbd0" opacity="0.85"/>
+              <circle cx="45" cy="50" r="8" fill="#f48fb1" opacity="0.8"/>
+              <circle cx="25" cy="75" r="7" fill="#f8bbd0" opacity="0.75"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Characters Illustration -->
+        <div class="illustration-pane">
+          <div class="character-wrapper">
+            <img src="assets/characters.png" alt="Apology illustration" class="characters-img" onerror="this.src='assets/page1_original.jpg'">
+            <!-- Subtle floor shadow under characters -->
+            <div class="character-shadow"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 2: Long Vertical Scrolling Handwritten Apology Letter
+         ========================================================================= -->
+    <section id="page-2" class="page-view" aria-label="Page 2">
+      <div class="page-2-scroll-container">
+        
+        <!-- Sticky / Top Navigation Bar -->
+        <nav class="letter-top-nav">
+          <button id="btn-back-to-1" class="back-pill-btn" type="button" aria-label="Back to Page 1">
+            <span class="back-arrow">←</span>
+            <span>Page 1</span>
+          </button>
+          <div class="letter-badge">Personal Letter ✉️</div>
+        </nav>
+
+        <!-- Parchment Card Envelope / Letter Body (One Continuous Sheet) -->
+        <article class="parchment-letter">
+          
+          <!-- Top Torn / Deckle Edge -->
+          <div class="deckle-edge deckle-top" aria-hidden="true">
+            <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+              <path d="M0,24 L0,10 Q25,4 50,12 T100,6 T150,14 T200,8 T250,13 T300,5 T350,12 T400,7 T450,14 T500,6 T550,11 T600,5 T650,12 T700,7 T750,14 T800,6 T850,11 T900,5 T950,13 T1000,7 T1050,12 T1100,5 T1150,13 T1200,8 L1200,24 Z" fill="#FFF8EA"/>
+            </svg>
+          </div>
+          
+          <!-- SECTION 1: Header + Apology Opening + (Sorry Cat & Tulips Bouquet) -->
+          <section class="letter-section section-intro scroll-reveal">
+            <!-- Left Decoration: Sorry Cat -->
+            <div class="decor-art decor-top-left float-gentle">
+              <img src="assets/sorry_cat.png" alt="Sorry Cat illustration" class="art-img">
+            </div>
+
+            <!-- Right Decoration: Tulips Bouquet -->
+            <div class="decor-art decor-top-right float-gentle delay-1">
+              <img src="assets/tulips.png" alt="Tulips bouquet illustration" class="art-img">
+            </div>
+
+            <div class="section-center-content">
+              <h2 class="letter-title-script">A little something</h2>
+              <p class="letter-subtitle">I wanted to tell you...</p>
+              
+              <div class="letter-divider">
+                <span class="divider-line"></span>
+              </div>
+
+              <div class="letter-text-block">
+                <p class="letter-p greeting-p">Hey,</p>
+                <p class="letter-p lead-p">I just wanted to say I'm really sorry.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 2: Explaining feelings + (Evil Eye & Cat with Flower) -->
+          <section class="letter-section section-feelings scroll-reveal">
+            <!-- Left Decoration: Evil Eye -->
+            <div class="decor-art decor-mid-left float-gentle delay-2">
+              <img src="assets/evil_eye.png" alt="Evil Eye charm" class="art-img">
+            </div>
+
+            <!-- Right Decoration: Cat with Flower -->
+            <div class="decor-art decor-mid-right float-gentle">
+              <img src="assets/cat_flower.png" alt="Cat holding flower" class="art-img">
+            </div>
+
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  I know I shouldn't have shouted at you just because you were talking to other guys.
+                </p>
+                <p class="letter-p">
+                  You didn't do anything wrong, and I realize that I let my feelings take over.
+                </p>
+                <p class="letter-p">
+                  I never wanted to hurt you or make you feel bad.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Missing the bond + (Butterfly, Roses Bunny, Couple Boxing) -->
+          <section class="letter-section section-miss-you scroll-reveal">
+            <!-- Left Side Composite: Butterfly + Bunny Bouquet -->
+            <div class="decor-art decor-left-group">
+              <div class="butterfly-art float-gentle">
+                <img src="assets/butterfly.png" alt="Pink butterfly" class="art-img butterfly-img">
+              </div>
+              <div class="bunny-roses-art float-gentle delay-1">
+                <img src="assets/bunny_roses.png" alt="Bunny with red roses bouquet" class="art-img bunny-img">
+              </div>
+            </div>
+
+            <!-- Right Side: Couple Boxing Comic -->
+            <div class="decor-art decor-right-comic float-gentle delay-2">
+              <img src="assets/couple_boxing.png" alt="Cute couple playful boxing cartoon" class="art-img comic-img">
+            </div>
+
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  I honestly miss talking to you.
+                </p>
+                <p class="letter-p">
+                  I miss the way we used to chat, the random conversations, the small things, everything.
+                </p>
+                <p class="letter-p">
+                  Whenever I see you, I still want to talk to you, but I know things aren't the same right now.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 4: Hesitation & Guilt + (Blue Flower) -->
+          <section class="letter-section section-guilt scroll-reveal">
+            <!-- Right Decoration: Watercolor Blue Flower -->
+            <div class="decor-art decor-blue-flower float-gentle">
+              <img src="assets/blue_flower.png" alt="Watercolor blue flower" class="art-img blue-flower-img">
+            </div>
+
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  I understand why you're upset with me, and I respect your space.
+                </p>
+                <p class="letter-p">
+                  Honestly, I'm scared to talk to you when I see you outside.
+                </p>
+                <p class="letter-p">
+                  I've tried a few times, but then I start thinking about how you might respond, and my guilt takes over, so I just walk away.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 5: Genuine remorse & learning -->
+          <section class="letter-section section-remorse scroll-reveal">
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  I wish I had the courage to say all of this to you face to face.
+                </p>
+                <p class="letter-p">
+                  I want you to know that I'm truly sorry for what I did. I wish I had handled things differently.
+                </p>
+                <p class="letter-p promise-text">
+                  I've learned from my mistake, and I promise I'll try to do better.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 6: Breaking the silence -->
+          <section class="letter-section section-silence scroll-reveal">
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  If you're still angry or upset with me, please let me know.
+                </p>
+                <p class="letter-p">
+                  You can shout at me, be mad at me, or just talk to me about it.
+                </p>
+                <p class="letter-p">
+                  I would rather hear how you feel and sort things out than have this silence between us.
+                </p>
+                <p class="letter-p emotion-note">
+                  Not being able to talk to you has been really hard for me.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 7: Hope for the future + (Balcony Characters) -->
+          <section class="letter-section section-balcony scroll-reveal">
+            <!-- Left: Balcony Girl with Potted Plants -->
+            <div class="decor-art decor-balcony-girl">
+              <img src="assets/balcony_girl.png" alt="Girl on balcony with plants" class="art-img balcony-girl-img">
+            </div>
+
+            <!-- Flying Paper Plane Path -->
+            <div class="paper-plane-trail" aria-hidden="true">
+              <svg viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M280 45 C 200 10, 100 50, 20 25" stroke="#df9f72" stroke-width="1.8" stroke-dasharray="4 4"/>
+                <polygon points="18,22 10,25 20,32" fill="#df9f72"/>
+              </svg>
+            </div>
+
+            <!-- Right: Balcony Boy sending paper plane -->
+            <div class="decor-art decor-balcony-boy">
+              <img src="assets/balcony_boy.png" alt="Boy on balcony sending paper airplane" class="art-img balcony-boy-img">
+            </div>
+
+            <div class="section-center-content">
+              <div class="letter-text-block">
+                <p class="letter-p">
+                  I'm not asking for your forgiveness right away.
+                </p>
+                <p class="letter-p">
+                  I just hope that someday, when you're ready, we can talk again.
+                </p>
+                <p class="letter-p">
+                  If you ever feel comfortable talking to me again and decide to forgive me, please call me.
+                </p>
+                <p class="letter-p">
+                  I'd really like to hear your voice and talk to you again.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- FINAL SECTION: Sincere Closing & Choice Buttons -->
+          <section class="letter-section section-final scroll-reveal">
+            <div class="section-center-content">
+              
+              <p class="letter-p respect-decision">
+                Until then, I'll respect your decision.
+              </p>
+
+              <div class="final-apology-banner">
+                <p class="final-apology-text">I'm really sorry. I mean it. ❤️</p>
+              </div>
+
+              <!-- Interactive Decision Buttons -->
+              <div class="decision-buttons-row" id="decision-buttons-container">
+                <button id="btn-forgive" class="decision-btn btn-forgive-style" type="button">
+                  <span class="btn-icon">🌸</span>
+                  <span>I Forgive You ❤️</span>
+                </button>
+
+                <button id="btn-not-ready" class="decision-btn btn-not-ready-style" type="button">
+                  <span class="btn-icon">🕊️</span>
+                  <span>I'm Not Ready Yet</span>
+                </button>
+              </div>
+
+              <!-- Dynamic Response Message (Revealed on Click) -->
+              <div id="response-box" class="response-message-box" aria-live="polite">
+                <!-- Content injected dynamically via script.js -->
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Bottom Torn / Deckle Edge -->
+          <div class="deckle-edge deckle-bottom" aria-hidden="true">
+            <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+              <path d="M0,0 L0,14 Q25,20 50,12 T100,18 T150,10 T200,16 T250,11 T300,19 T350,12 T400,17 T450,10 T500,18 T550,13 T600,19 T650,12 T700,17 T750,10 T800,18 T850,13 T900,19 T950,11 T1000,17 T1050,12 T1100,19 T1150,11 T1200,16 L1200,0 Z" fill="#FFF8EA"/>
+            </svg>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
